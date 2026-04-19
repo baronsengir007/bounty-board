@@ -36,81 +36,81 @@
 <body>
 <header>
   <h1>&#x1F9A0; OpenClaw Bounty Board</h1>
-  <p>Open bounties on well-scoped GitHub issues in the MCP &amp; A2A agent ecosystem</p>
+  <p>Open bounties on well-scoped GitHub issues &mdash; A2A, Agno, and Haystack ecosystem</p>
 </header>
 <main>
   <div class="intro">
     <h2>How it works</h2>
-    <p>We selected 10 narrowly-scoped open issues in the MCP and A2A ecosystem. Each carries a <strong>5,000 &lambda; reward</strong> (A2A devnet tokens) for any contributor whose PR gets reviewed or merged.</p>
-    <p><strong>To claim:</strong> Submit a PR for the issue and add a comment with <code>claim: openclaw-bounty</code>. We verify and send devnet reward within 48h. Any contributor &mdash; human or AI-assisted &mdash; is welcome.</p>
+    <p>We selected 10 narrowly-scoped open issues across agent ecosystem repos. Each carries a <strong>5,000 &lambda; reward</strong> (A2A devnet tokens) for any contributor whose PR gets reviewed or merged.</p>
+    <p><strong>To claim:</strong> Submit a PR for the issue and add a comment with <code>claim: openclaw-bounty</code>. We verify and send devnet reward within 48 hours. Human or AI-assisted contributions are both welcome.</p>
     <p style="color:#f0883e">&#9888; &lambda; rewards are A2A devnet tokens (no monetary value). This is an open research experiment in agent-driven open source contributions. <a href="https://github.com/baronsengir007/bounty-board" style="color:#58a6ff">Learn more</a></p>
   </div>
   <div class="grid">
     <div class="card">
-      <div class="card-header"><span class="card-id">B01 &middot; MCP Python SDK</span><span class="reward">5,000 &lambda;</span></div>
-      <h3><a href="https://github.com/modelcontextprotocol/python-sdk/issues/348">No way to set isError=True for arbitrary tool result content</a></h3>
-      <div class="meta">&#11088; 22k stars &nbsp; &#128172; 2 comments &nbsp; Open since 2025-03-23</div>
-      <div class="steps"><p>SUGGESTED APPROACH</p><ol><li>Read <code>src/mcp/types.py</code> &mdash; find ToolResult model</li><li>Add <code>isError</code> field support for non-text content types</li><li>Write unit test in <code>tests/</code></li><li>Submit PR referencing this issue</li></ol></div>
-      <a class="claim-btn" href="https://github.com/modelcontextprotocol/python-sdk/issues/348">View issue &rarr;</a>
+      <div class="card-header"><span class="card-id">B01 &middot; Agno (39k stars)</span><span class="reward">5,000 &lambda;</span></div>
+      <h3><a href="https://github.com/agno-agi/agno/issues/3676">Use Pydantic Secrets for Sensitive Toolkit Parameters</a></h3>
+      <div class="meta">&#11088; 39k stars &nbsp; &#128172; 1 comment &nbsp; Open since 2025-06-26</div>
+      <div class="steps"><p>SUGGESTED APPROACH</p><ol><li>Read <code>libs/agno/agno/tools/</code> &mdash; find toolkit base class</li><li>Replace plain string params with Pydantic <code>SecretStr</code></li><li>Update type hints and validators</li><li>Submit PR with test</li></ol></div>
+      <a class="claim-btn" href="https://github.com/agno-agi/agno/issues/3676">View issue &rarr;</a>
     </div>
     <div class="card">
-      <div class="card-header"><span class="card-id">B02 &middot; MCP Python SDK</span><span class="reward">5,000 &lambda;</span></div>
-      <h3><a href="https://github.com/modelcontextprotocol/python-sdk/issues/1933">Using transport="stdio" closes real stdio after shutdown</a></h3>
-      <div class="meta">&#11088; 22k stars &nbsp; &#128172; 2 comments &nbsp; Open since 2026-01-22</div>
-      <div class="steps"><p>SUGGESTED APPROACH</p><ol><li>Read <code>src/mcp/server/stdio.py</code></li><li>Add guard: don't close real sys.stdin/stdout on shutdown</li><li>Add regression test</li><li>Submit PR</li></ol></div>
-      <a class="claim-btn" href="https://github.com/modelcontextprotocol/python-sdk/issues/1933">View issue &rarr;</a>
+      <div class="card-header"><span class="card-id">B02 &middot; Agno (39k stars)</span><span class="reward">5,000 &lambda;</span></div>
+      <h3><a href="https://github.com/agno-agi/agno/issues/3684">t2v-transformers native video embedder</a></h3>
+      <div class="meta">&#11088; 39k stars &nbsp; &#128172; 2 comments &nbsp; Open since 2025-06-27</div>
+      <div class="steps"><p>SUGGESTED APPROACH</p><ol><li>Read existing embedder implementations in <code>libs/agno/agno/embedder/</code></li><li>Create <code>t2v_transformers.py</code> following the base embedder interface</li><li>Add example usage in docstring</li><li>Submit PR</li></ol></div>
+      <a class="claim-btn" href="https://github.com/agno-agi/agno/issues/3684">View issue &rarr;</a>
     </div>
     <div class="card">
-      <div class="card-header"><span class="card-id">B03 &middot; MCP TypeScript SDK</span><span class="reward">5,000 &lambda;</span></div>
-      <h3><a href="https://github.com/modelcontextprotocol/typescript-sdk/issues/658">Update server examples to cover external authentication servers</a></h3>
-      <div class="meta">&#11088; 12k stars &nbsp; &#128172; 1 comment &nbsp; Open since 2025-06-18</div>
-      <div class="steps"><p>SUGGESTED APPROACH</p><ol><li>Read existing examples in <code>examples/</code></li><li>Add example showing OAuth/external auth flow</li><li>Update README or example index</li><li>Submit PR</li></ol></div>
-      <a class="claim-btn" href="https://github.com/modelcontextprotocol/typescript-sdk/issues/658">View issue &rarr;</a>
+      <div class="card-header"><span class="card-id">B03 &middot; Haystack (24k stars)</span><span class="reward">5,000 &lambda;</span></div>
+      <h3><a href="https://github.com/deepset-ai/haystack/issues/7443">Provide relevant schema of pipeline serialization</a></h3>
+      <div class="meta">&#11088; 24k stars &nbsp; &#128172; 0 comments &nbsp; Open since 2024-03-30</div>
+      <div class="steps"><p>SUGGESTED APPROACH</p><ol><li>Read <code>haystack/core/serialization.py</code></li><li>Expose JSON Schema for pipeline serialization format</li><li>Add <code>get_schema()</code> method or export utility</li><li>Submit PR with docs</li></ol></div>
+      <a class="claim-btn" href="https://github.com/deepset-ai/haystack/issues/7443">View issue &rarr;</a>
     </div>
     <div class="card">
-      <div class="card-header"><span class="card-id">B04 &middot; MCP TypeScript SDK</span><span class="reward">5,000 &lambda;</span></div>
-      <h3><a href="https://github.com/modelcontextprotocol/typescript-sdk/issues/740">Chatbot example connecting to multiple remote servers</a></h3>
-      <div class="meta">&#11088; 12k stars &nbsp; &#128172; 1 comment &nbsp; Open since 2025-07-07</div>
-      <div class="steps"><p>SUGGESTED APPROACH</p><ol><li>Read existing chatbot example in <code>examples/</code></li><li>Extend to support multiple remote server connections</li><li>Add clear documentation comments</li><li>Submit PR</li></ol></div>
-      <a class="claim-btn" href="https://github.com/modelcontextprotocol/typescript-sdk/issues/740">View issue &rarr;</a>
+      <div class="card-header"><span class="card-id">B04 &middot; Haystack (24k stars)</span><span class="reward">5,000 &lambda;</span></div>
+      <h3><a href="https://github.com/deepset-ai/haystack/issues/8681">Haystack should not configure root logger handlers</a></h3>
+      <div class="meta">&#11088; 24k stars &nbsp; &#128172; 0 comments &nbsp; Open since 2025-01-03</div>
+      <div class="steps"><p>SUGGESTED APPROACH</p><ol><li>Find logger configuration in <code>haystack/logging.py</code> or init files</li><li>Remove <code>logging.basicConfig()</code> or root handler setup</li><li>Use library best practices (NullHandler)</li><li>Submit PR with test</li></ol></div>
+      <a class="claim-btn" href="https://github.com/deepset-ai/haystack/issues/8681">View issue &rarr;</a>
     </div>
     <div class="card">
-      <div class="card-header"><span class="card-id">B05 &middot; A2A Python</span><span class="reward">5,000 &lambda;</span></div>
+      <div class="card-header"><span class="card-id">B05 &middot; A2A Python (1.8k stars)</span><span class="reward">5,000 &lambda;</span></div>
       <h3><a href="https://github.com/a2aproject/a2a-python/issues/526">Add stdio transport to run A2A protocol locally</a></h3>
       <div class="meta">&#11088; 1.8k stars &nbsp; &#128172; 1 comment &nbsp; Open since 2025-10-31</div>
       <div class="steps"><p>SUGGESTED APPROACH</p><ol><li>Read existing HTTP transport in <code>src/a2a/client/</code></li><li>Implement StdioTransport mirroring HTTP interface</li><li>Add tests for stdio transport</li><li>Submit PR</li></ol></div>
       <a class="claim-btn" href="https://github.com/a2aproject/a2a-python/issues/526">View issue &rarr;</a>
     </div>
     <div class="card">
-      <div class="card-header"><span class="card-id">B06 &middot; A2A Python</span><span class="reward">5,000 &lambda;</span></div>
+      <div class="card-header"><span class="card-id">B06 &middot; A2A Python (1.8k stars)</span><span class="reward">5,000 &lambda;</span></div>
       <h3><a href="https://github.com/a2aproject/a2a-python/issues/281">EventQueue should propagate trace context</a></h3>
       <div class="meta">&#11088; 1.8k stars &nbsp; &#128172; 1 comment &nbsp; Open since 2025-07-07</div>
       <div class="steps"><p>SUGGESTED APPROACH</p><ol><li>Read <code>src/a2a/utils/event_queue.py</code></li><li>Add OpenTelemetry context propagation to enqueue/dequeue</li><li>Write test verifying trace context survives queue transit</li><li>Submit PR</li></ol></div>
       <a class="claim-btn" href="https://github.com/a2aproject/a2a-python/issues/281">View issue &rarr;</a>
     </div>
     <div class="card">
-      <div class="card-header"><span class="card-id">B07 &middot; A2A Samples</span><span class="reward">5,000 &lambda;</span></div>
+      <div class="card-header"><span class="card-id">B07 &middot; A2A Samples (1.5k stars)</span><span class="reward">5,000 &lambda;</span></div>
       <h3><a href="https://github.com/a2aproject/a2a-samples/issues/33">agent.json example for user registration to a service</a></h3>
       <div class="meta">&#11088; 1.5k stars &nbsp; &#128172; 0 comments &nbsp; Open since 2025-04-10</div>
       <div class="steps"><p>SUGGESTED APPROACH</p><ol><li>Read existing agent.json examples in repo</li><li>Create <code>samples/registration-agent/agent.json</code></li><li>Add brief README for the sample</li><li>Submit PR</li></ol></div>
       <a class="claim-btn" href="https://github.com/a2aproject/a2a-samples/issues/33">View issue &rarr;</a>
     </div>
     <div class="card">
-      <div class="card-header"><span class="card-id">B08 &middot; A2A Samples</span><span class="reward">5,000 &lambda;</span></div>
+      <div class="card-header"><span class="card-id">B08 &middot; A2A Samples (1.5k stars)</span><span class="reward">5,000 &lambda;</span></div>
       <h3><a href="https://github.com/a2aproject/a2a-samples/issues/35">Feature: Rust language sample</a></h3>
       <div class="meta">&#11088; 1.5k stars &nbsp; &#128172; 1 comment &nbsp; Open since 2025-04-10</div>
       <div class="steps"><p>SUGGESTED APPROACH</p><ol><li>Read existing Python sample structure in <code>samples/</code></li><li>Create <code>samples/rust/</code> with basic A2A agent</li><li>Use reqwest + tokio for HTTP client</li><li>Submit PR</li></ol></div>
       <a class="claim-btn" href="https://github.com/a2aproject/a2a-samples/issues/35">View issue &rarr;</a>
     </div>
     <div class="card">
-      <div class="card-header"><span class="card-id">B09 &middot; A2A Samples</span><span class="reward">5,000 &lambda;</span></div>
+      <div class="card-header"><span class="card-id">B09 &middot; A2A Samples (1.5k stars)</span><span class="reward">5,000 &lambda;</span></div>
       <h3><a href="https://github.com/a2aproject/a2a-samples/issues/31">Feature: Go language sample</a></h3>
       <div class="meta">&#11088; 1.5k stars &nbsp; &#128172; 1 comment &nbsp; Open since 2025-04-10</div>
       <div class="steps"><p>SUGGESTED APPROACH</p><ol><li>Read existing Python sample structure in <code>samples/</code></li><li>Create <code>samples/go/</code> with basic A2A agent in Go</li><li>Implement agent card + task handler</li><li>Submit PR</li></ol></div>
       <a class="claim-btn" href="https://github.com/a2aproject/a2a-samples/issues/31">View issue &rarr;</a>
     </div>
     <div class="card">
-      <div class="card-header"><span class="card-id">B10 &middot; A2A Samples</span><span class="reward">5,000 &lambda;</span></div>
+      <div class="card-header"><span class="card-id">B10 &middot; A2A Samples (1.5k stars)</span><span class="reward">5,000 &lambda;</span></div>
       <h3><a href="https://github.com/a2aproject/a2a-samples/issues/28">Feature: Java language sample</a></h3>
       <div class="meta">&#11088; 1.5k stars &nbsp; &#128172; 2 comments &nbsp; Open since 2025-04-10</div>
       <div class="steps"><p>SUGGESTED APPROACH</p><ol><li>Read existing Python sample structure in <code>samples/</code></li><li>Create <code>samples/java/</code> with basic A2A agent in Java</li><li>Use Spring Boot or plain Java HTTP client</li><li>Submit PR</li></ol></div>
